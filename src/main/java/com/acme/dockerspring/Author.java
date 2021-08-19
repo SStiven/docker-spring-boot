@@ -1,6 +1,11 @@
 package com.acme.dockerspring;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Author {
+    @Id
     private int id;
     private String name;
 
@@ -12,6 +17,7 @@ public class Author {
         this.name = name;
     }
 
+    @Id
     public int getId() {
         return id;
     }
